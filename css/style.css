@@ -1,0 +1,135 @@
+* {
+	font-family: Nunito;
+}
+
+body {
+	padding: 0%;
+	margin: 0%;
+}
+
+header {
+	width: 100%;
+	background-color: white;
+	padding: 10px;
+}
+
+h1 {
+	text-decoration: underline;
+}
+
+h1, h2, h3 {
+	padding: 2.9%;
+}
+
+.nopadding {
+	padding: 0%;
+}
+
+.container {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#menu {
+	background-color: #E21C21;
+}
+
+#contactus {
+	background-color: #E21C21;
+}
+
+#photogallery {
+	background-color: #E21C21;
+}
+
+.centertext {
+	text-align: center;
+}
+
+.whitetext {
+	color: white;
+}
+
+.blacktext {
+	color: black;
+}
+
+.steps {
+    margin: 15px auto;
+}
+
+.column1, .column2, .column3 {
+	width: 30%;
+	float: left;
+	margin: 1%;
+	text-align: center;
+	border: solid white;
+}
+
+.innercolumn1, .innercolumn2 {
+	width: 23%;
+	float: left;
+	margin: 1%;
+	text-align: center;
+}
+
+.leftcolumn, .rightcolumn {
+	width: 43%;
+	float: left;
+	margin: 1%;
+	text-align: center;
+}
+
+i {
+	font-size: 50px;
+}
+
+input {
+	width:50%;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+}
+
+form {
+	margin: 6% 1%;
+}
+textarea {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+#submit {
+	width: 25%;
+}
+
+/* CSS for PHOTO GALLERY */
+.gallery {
+	display:flex;
+	margin: auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+figure {
+	width: 20%;
+	margin: 1%;
+	border: 1px solid black;
+	padding: 2%;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+figure img{
+	width: 100%;
+	border: 1px solid black;
+}
+
+figure figcaption{
+	font-size: 20px;
+	text-align: center;
+	padding: 8px 4px;
+}
