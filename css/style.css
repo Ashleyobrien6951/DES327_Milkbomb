@@ -8,6 +8,7 @@ body {
 }
 
 header {
+	position: sticky;
 	width: 100%;
 	background-color: white;
 	padding: 10px;
@@ -29,19 +30,6 @@ h1, h2, h3 {
 	width: 100%;
 	box-sizing: border-box;
 }
-
-#menu {
-	background-color: #E21C21;
-}
-
-#contactus {
-	background-color: #E21C21;
-}
-
-#photogallery {
-	background-color: #E21C21;
-}
-
 .centertext {
 	text-align: center;
 }
@@ -54,8 +42,30 @@ h1, h2, h3 {
 	color: black;
 }
 
-.steps {
-    margin: 15px auto;
+/* CSS for HOME PAGE */
+
+#homePage {
+	background-image: url('../Images/BGIceCream.png');
+	background-size: 55%;
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+#homeScreenLogo {
+	width: 40%;
+	padding-left: 25%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+
+}
+
+/* END CSS for HOME PAGE */
+
+
+/* CSS for MENU */
+#menu {
+	background-color: #E21C21;
 }
 
 .column1, .column2, .column3 {
@@ -71,6 +81,19 @@ h1, h2, h3 {
 	float: left;
 	margin: 1%;
 	text-align: center;
+	display: block;
+	box-sizing: border-box;
+}
+
+.steps {
+    margin: 15px auto;
+}
+/* END CSS for MENU */
+
+
+/* CSS for CONTACT US */
+#contactus {
+	background-color: #E21C21;
 }
 
 .leftcolumn, .rightcolumn {
@@ -78,10 +101,6 @@ h1, h2, h3 {
 	float: left;
 	margin: 1%;
 	text-align: center;
-}
-
-i {
-	font-size: 50px;
 }
 
 input {
@@ -105,8 +124,14 @@ textarea {
 #submit {
 	width: 25%;
 }
+/* END CSS for CONTACT US */
+
 
 /* CSS for PHOTO GALLERY */
+#photogallery {
+	background-color: #E21C21;
+}
+
 .gallery {
 	display:flex;
 	margin: auto;
@@ -117,7 +142,6 @@ textarea {
 figure {
 	width: 20%;
 	margin: 1%;
-	border: 1px solid black;
 	padding: 2%;
 	box-sizing: border-box;
 	background-color: white;
@@ -133,3 +157,87 @@ figure figcaption{
 	text-align: center;
 	padding: 8px 4px;
 }
+/* END CSS for PHOTO GALLERY */
+
+
+/* CSS for ABOUT US */
+
+.Polaroid {
+	width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  padding-left: 30px;
+}
+
+
+
+/* Tablet Media Queries */
+
+@media only screen and (max-width: 992px) {
+
+	   .column1, .column2, .column3, .innercolumn1, .innercolumn2 {
+   		width: 99%;
+   		float: none;
+   		margin: 1% auto;
+   		text-align: center;
+   }
+
+   .innercolumn1, .innercolumn2 {
+   		display: block;
+   }
+
+   figure {
+		width: 48%;
+		margin: 1% auto;
+		padding: 2%;
+		box-sizing: border-box;
+		background-color: white;
+	}
+
+	figure img {
+		width: 100%;
+		border: 1px solid black;
+	}
+    
+} 
+
+/* End Tablet Media Queries */
+
+
+/* Phone Media Queries */
+
+@media only screen and (max-width: 600px) {
+    
+   .column1, .column2, .column3, .innercolumn1, .innercolumn2 {
+   		width: 100%;
+   		float: none;
+   		margin: 1% auto;
+   		text-align: center;
+   }
+
+   .innercolumn1, .innercolumn2 {
+   		display: block;
+   }
+
+   figure {
+		width: 96%;
+		margin: 1% auto;
+		padding: 2%;
+		box-sizing: border-box;
+		background-color: white;
+	}
+
+	figure img {
+		width: 100%;
+		border: 1px solid black;
+	}
+
+}
+
+/* End Phone Media Queries */
