@@ -4,15 +4,30 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Contact Us</title>
 	</head>
 
 	<body id="contactus">
-		<header>
-			<a href="#">
-			<img src="images/MilkbombLogoNOBORDER.png" alt="Milkbomb Logo" width="200" height="100">
-			</a>
-		</header>
+		<main>
+		
+		<div class="logo">
+			<img src="images/MilkbombLogoNOBORDER.png" alt="Milkbomb Logo" width="200">
+		</div>
+
+		<nav class="mainNav" id="responsiveNav">
+			
+			<div>
+			<a href="#">Home</a>
+			<a href="#">Menu</a>
+			<a href="#">About</a>
+			<a href="#">Photo Gallery</a>
+			<a href="#">Contact Us</a>
+		</div>
+		<a href="javascript:void(0);" style="font-size: 50px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</nav>
+
+	</main>
 
 		<div class="leftcolumn whitetext">
 			<h1>CONTACT US</h1>
@@ -20,7 +35,19 @@
 			<h3 class="blacktext nopadding">408-702-5143</h3>
 			<h2>Email:</h2>
 			<h3 class="blacktext nopadding">info@milkbombicecream.com</h3>
-			<div class="container">
+
+		<h1>FIND US ON...</h1>
+
+				<a href="https://www.facebook.com/milkbombicecream"><i class="fa fa-facebook-square" style="font-size:60px"></i></a>
+			
+				<a href="https://www.instagram.com/milkbombicecream/"><i class="fa fa-instagram" style="font-size:60px"></i></a>
+			
+				<a href="https://twitter.com/eatMILKBOMB"><i class="fa fa-twitter-square" style="font-size:60px"></i></a>
+			
+		</div>
+
+		<div class="rightcolumn whitetext">
+				<h1>How can we help?</h1>
 				<form>
   					Name:<br>
   						<input type="text" name="firstname"><br><br>
@@ -29,21 +56,20 @@
   					Subject:<br>
   					 	<input type="text" name="subject"><br><br>
   					 Message:<br>
-  					 	<textarea name="message" placeholder="Write something..">
-  					 	</textarea>
+  					 	<textarea name="message" placeholder="Write something.."></textarea>
   					 	<input id="submit" type="submit" value="Submit">
 				</form>
 			</div>
-		</div>
 
-		<div class="rightcolumn whitetext">
-			<h1>FIND US ON...</h1>
-			<h2> FACEBOOK </h2>
-			<h2> INSTAGRAM </h2>
-			<h2> TWITTER </h2>
-			<h2> FIVESTARS </h2>
-
-		</div>
-
+<script>
+function myFunction() {
+var x = document.getElementById("responsiveNav");
+if (x.className === "mainNav") {
+x.className += " responsive";
+} else {
+x.className = "mainNav";
+}
+}
+</script>
 	</body>
 </html>
