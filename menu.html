@@ -4,17 +4,34 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Milkbomb's Menu</title>
 	</head>
 
 	<body id="menu">
 
-		<header>
-			<a href="#">
-			<img src="images/MilkbombLogoNOBORDER.png" alt="Milkbomb Logo" width="200" height="100">
-			</a>
-		</header>
+	<main>
+		
+		<div class="logo">
+			<img src="images/MilkbombLogoNOBORDER.png" alt="Milkbomb Logo" width="200">
+		</div>
 
+		<nav class="mainNav" id="responsiveNav">
+			
+			<div>
+			<a href="#">Home</a>
+			<a href="#">Menu</a>
+			<a href="#">About</a>
+			<a href="#">Photo Gallery</a>
+			<a href="#">Contact Us</a>
+		</div>
+		<a href="javascript:void(0);" style="font-size: 50px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</nav>
+
+	</main>
+
+
+<div class="container">
 <!-- Beginning of "Start Here" -->
 		<div class="whitetext column1">
 			<h1>START HERE</h1>
@@ -104,6 +121,19 @@
 		<div class="whitetext column3">
 			<h4>*** We switch our flavors daily,<br> so the one you want may not be available ***</h4>
 		</div>
+
+</div>
+
+		<script>
+function myFunction() {
+var x = document.getElementById("responsiveNav");
+if (x.className === "mainNav") {
+x.className += " responsive";
+} else {
+x.className = "mainNav";
+}
+}
+</script>
 
 	</body>
 </html>
