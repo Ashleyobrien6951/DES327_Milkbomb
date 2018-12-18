@@ -267,6 +267,13 @@ figure figcaption{
 	background-color: #E21C21; 
 }
 
+.aboutUs p {
+font-family: Nunito;
+text-align: center;
+font-size: 50px;
+text-decoration: underline;
+}
+
 .Polaroid {
 	width: 30%;
     background-color: white;
