@@ -277,6 +277,11 @@ figure figcaption{
 	background-color: #E21C21; 
 }
 
+.aboutContainer {
+	position: relative;
+	top: 150px;
+}
+
 .aboutUs p {
 font-family: Nunito;
 text-align: center;
@@ -314,6 +319,10 @@ text-decoration: underline;
 	border: double white;
 	border-width: 10px;
 		}
+
+.aboutBio h1 {
+	text-align: center;
+}
 
 p {
 	font-size: 30px;
