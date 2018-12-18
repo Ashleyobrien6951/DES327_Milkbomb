@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MilkBombIceCream-About</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Milkbomb.css">    
+  </head>
+  <body class="bodyAbout">
+  	<header>
+      <a href="MilkBombHome_Web.html">
+      <img src="Images/MilkbombLogoNOBORDER.png" width="200" height="100">
+      </a>
+    </header>
+    <div class="aboutUs">
+      <p>About Us</p>
+    </div>
+
+  	<div class="Polaroid">
+  		<img src="Images/MBStoreFront.png" width="300">
+  		<div class="polContainer"> Come visit us in Potrero Hill!</div>
+    </div>
+
+      <div class="aboutBio">
+      <p> Milkbomb Ice Cream is a family built and operated  business. Milkbomb Ice Cream opened its very first shop in the Summer of 2017 in the Potrero Hill neighborhood of San Francisco, Califonia. With the success of their first store, the company plans to franchise and expand with more locations in San Francisco, the US, and abroad.</p>
+    </div>
+
+    <div class="googleMap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11959.437336396624!2d-122.40118199999998!3d37.76447799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a71bce8e93085e7!2sMilkbomb+Ice+Cream!5e1!3m2!1sen!2sus!4v1544586334035" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+  </body>
+</html>
