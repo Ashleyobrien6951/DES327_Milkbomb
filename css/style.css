@@ -123,17 +123,27 @@ main {
 
 #homePage {
 	background-image: url('../Images/BGIceCream.png');
-	background-size: 55%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	width: 100%;
 	margin: 0px auto;
 	padding: 0px;
 }
 
 #homeScreenLogo {
-	width: 40%;
-	padding-left: 25%;
-	padding-bottom: 1%;
-	padding-top: 4%;
+	position: absolute;
+	width: 50%;
+	margin: auto;
+	top: 20%;
+	left: 25%;
+}
+
+#homeScreenLogo img{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	
 
 }
 
@@ -385,6 +395,23 @@ main .mainNav {
 	top: 100%;
 	
 }
+
+#homeScreenLogo {
+	position: absolute;
+	width: 50%;
+	margin: auto;
+	top: 40%;
+	left: 25%;
+}
+
+#homeScreenLogo img{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	margin: 20px auto;
+	top: 30%;
+
+}
     
 }
 
@@ -495,5 +522,14 @@ main .mainNav {
 		width: 86%;		
 		}
 	}
+
+#homeScreenLogo img{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	margin: 20px auto;
+	top: 30%;
+
+}
 
 /* End Phone Media Queries */
