@@ -4,12 +4,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MilkBombIceCream</title>
-    <link rel="stylesheet" type="text/css" href="CSS/Milkbomb.css">    
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
   </head>
 
 
-  	<body id="homePage">  		 
+  	<body id="homePage">  
+
+  	<main>
+		
+		<div class="logo">
+			<img src="images/MilkbombLogoNOBORDER.png" alt="Milkbomb Logo" width="200">
+		</div>
+
+		<a href="javascript:void(0);" style="font-size: 50px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+		<nav class="mainNav" id="responsiveNav">
+			
+			<div>
+			<a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="#">About</a>
+			<a href="photogallery.html">Photo Gallery</a>
+			<a href="contactus.html">Contact Us</a>
+		</div>
+		</nav>
+
+	</main>		 
        <div id="homeScreenLogo">
   	<img src="Images/MilkbombLogoEdit.png" width="700"></div>
+
+  	<script>
+function myFunction() {
+var x = document.getElementById("responsiveNav");
+if (x.className === "mainNav") {
+x.className += " responsive";
+} else {
+x.className = "mainNav";
+}
+}
+</script>
 </body>
 </html>
