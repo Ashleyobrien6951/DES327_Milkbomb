@@ -386,7 +386,24 @@ main .mainNav {
 	
 }
     
-} 
+}
+
+@media only screen and (max-width: 800px) {
+	.aboutBio {
+		width: 75%;
+		text-align: center;
+			}
+	.Polaroid {
+		width: 80%;
+		margin-left: 40px;
+		padding-right: 1px;
+		padding-left: 1px;
+		}
+	.googleMap {
+		width: 75%;
+		text-align: center;
+		}
+	}
 
 /* End Tablet Media Queries */
 
@@ -458,5 +475,25 @@ main .mainNav {
 
 
 }
+
+@media only screen and (max-width: 600px) {
+	.aboutBio {
+		width: 75%;
+		text-align: center;
+			}
+	.Polaroid {
+		width: 80%;
+		margin-left: 40px;
+		padding-right: 1px;
+		padding-left: 1px;
+
+	}
+	.googleMap {
+		text-align: center;
+		float: left;
+		margin-left: 20px;
+		width: 86%;		
+		}
+	}
 
 /* End Phone Media Queries */
