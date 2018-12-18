@@ -1,17 +1,13 @@
 * {
 	font-family: Nunito;
+	box-sizing: border-box;
 }
 
-body {
+body, html {
+	width: 100%;
+	height: 100%;
 	padding: 0%;
 	margin: 0%;
-}
-
-header {
-	position: sticky;
-	width: 100%;
-	background-color: white;
-	padding: 10px;
 }
 
 h1 {
@@ -27,8 +23,10 @@ h1, h2, h3 {
 }
 
 .container {
+	display: inline-block;
 	width: 100%;
 	box-sizing: border-box;
+	float: left;
 }
 .centertext {
 	text-align: center;
@@ -41,6 +39,85 @@ h1, h2, h3 {
 .blacktext {
 	color: black;
 }
+
+/*CSS for Hamburger NAV*/
+
+main {
+	z-index: 100;
+	width: 100%;
+	height: 17%;
+	background-color: white;
+	position: fixed;
+
+}
+
+.logo {
+	position: fixed;
+	width: 25%;
+	padding: 20px;
+	float: left;
+
+}
+
+.mainNav {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	text-align: center;
+}
+
+.mainNav.responsive {
+	background-color: white;
+	position: relative;
+	width: 50%;
+	float: right;
+	padding: 43px 30px;
+}
+
+.icon {
+	color: black;
+	text-decoration: none;
+	float: right;
+	margin: 38px 30px;
+
+}
+
+
+.mainNav a {display: none;}
+
+.mainNav a.icon {
+		float: right;
+		display: inline;
+}
+
+.mainNav.responsive .icon {
+		float: left;
+		position: absolute;
+		right:0;
+		top:0;
+		padding: 30px 30px 30px 30px;
+}
+.mainNav.responsive a {
+		font-family: Nunito;
+		font-size: 20px;
+		text-decoration: none;
+		color: black;
+		display: inline-block;
+		text-align: center;
+		margin: 17px;
+}
+
+.mainNav.responsive a .logo {
+		text-decoration: none;
+		color: black;
+		display: block;
+		text-align: center;
+		margin: 0px;
+}
+
+/* END of CSS for NAV */
+
 
 /* CSS for HOME PAGE */
 
@@ -69,11 +146,14 @@ h1, h2, h3 {
 }
 
 .column1, .column2, .column3 {
+	position: relative;
+	top: 150px;
 	width: 30%;
 	float: left;
 	margin: 1%;
 	text-align: center;
 	border: solid white;
+	z-index: 99;
 }
 
 .innercolumn1, .innercolumn2 {
@@ -87,6 +167,7 @@ h1, h2, h3 {
 
 .steps {
     margin: 15px auto;
+    z-index: 99;
 }
 /* END CSS for MENU */
 
@@ -97,14 +178,24 @@ h1, h2, h3 {
 }
 
 .leftcolumn, .rightcolumn {
+	position: relative;
+	top: 150px;
 	width: 43%;
 	float: left;
 	margin: 1%;
 	text-align: center;
+	z-index: 99;
 }
 
 input {
-	width:50%;
+	width: 25%;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+input #submit {
+	width: 20%;
 }
 
 input[type=submit]:hover {
@@ -117,12 +208,21 @@ form {
 }
 textarea {
 	width: 100%;
-	padding: 20px;
+	height: 200px;
+	font-size: 15px;
 	box-sizing: border-box;
+	text-align: left;
 }
 
-#submit {
-	width: 25%;
+a i{
+	
+	margin: 50px 50px;	
+	text-decoration: none;
+	color: white;
+}
+
+a:hover i {
+	color: blue;
 }
 /* END CSS for CONTACT US */
 
@@ -133,6 +233,8 @@ textarea {
 }
 
 .gallery {
+	position: relative;
+	top: 20%;
 	display:flex;
 	margin: auto;
 	justify-content: space-between;
@@ -237,6 +339,45 @@ p {
 		width: 100%;
 		border: 1px solid black;
 	}
+
+	.leftcolumn, .rightcolumn {
+	width: 98%;
+	float: left;
+	margin: 1%;
+	text-align: center;
+}
+
+input {
+	width: 25%;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+}
+
+form {
+	margin: 6% 1%;
+}
+textarea {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+#submit {
+	width: 25%;
+}
+
+main .mainNav {
+	position: fixed;
+	left: 15%;
+	top: 100%;
+	
+}
     
 } 
 
@@ -248,7 +389,7 @@ p {
 @media only screen and (max-width: 600px) {
     
    .column1, .column2, .column3, .innercolumn1, .innercolumn2 {
-   		width: 100%;
+   		width: 98%;
    		float: none;
    		margin: 1% auto;
    		text-align: center;
@@ -270,6 +411,44 @@ p {
 		width: 100%;
 		border: 1px solid black;
 	}
+
+	.leftcolumn, .rightcolumn {
+	width: 98%;
+	float: left;
+	margin: 1%;
+	text-align: center;
+}
+
+input {
+	width: 75%;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+}
+
+form {
+	margin: 6% 1%;
+}
+textarea {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#submit {
+	width: 25%;
+}
+
+main .mainNav {
+	position: fixed;
+	top: 100%;
+	left: 30%;
+}
+
 
 }
 
