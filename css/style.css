@@ -175,6 +175,10 @@ main {
 	box-sizing: border-box;
 }
 
+.innercolmun1 p, .innercolumn2 p {
+	font-size: 15px;
+}
+
 .steps {
     margin: 15px auto;
     z-index: 99;
